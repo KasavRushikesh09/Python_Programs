@@ -8,7 +8,6 @@ for _ in range(n):
         print("Success")
         balance -= amount
 
-
     else:
         print("Failed")
 print(balance)

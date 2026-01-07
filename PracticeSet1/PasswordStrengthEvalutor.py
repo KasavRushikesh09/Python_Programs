@@ -9,7 +9,6 @@ if len(password) >= 8:
             isDigit = True
         elif ch.isupper():
             isUpper = True
-
 if len(password) >=8 and isDigit and isUpper:
     print("Strong password")
 else:

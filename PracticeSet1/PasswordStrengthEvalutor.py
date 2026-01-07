@@ -12,4 +12,4 @@ if len(password) >= 8:
 if len(password) >=8 and isDigit and isUpper:
     print("Strong password")
 else:
-    print("Weak password")
+    print("Weak password") 

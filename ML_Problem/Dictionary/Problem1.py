@@ -9,3 +9,4 @@ data = {
 
 asc_sort = dict(sorted(data.items() ,key = lambda item:item[1]))
 print(asc_sort)
+

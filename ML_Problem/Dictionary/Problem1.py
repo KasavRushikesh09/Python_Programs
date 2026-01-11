@@ -6,6 +6,6 @@ data = {
     'pineapple' : 30,
     'grapes' : 40,
 }
-
+ 
 asc_sort = dict(sorted(data.items() ,key = lambda item:item[1]))
 print(asc_sort)

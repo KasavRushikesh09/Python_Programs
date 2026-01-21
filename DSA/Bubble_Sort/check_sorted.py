@@ -19,7 +19,6 @@ def bubble_sort(arr):
             if arr[j] > arr[j+1]:
                 swap = True
                 break
-
     if not swap:
         return "Already Sorted"
     else:

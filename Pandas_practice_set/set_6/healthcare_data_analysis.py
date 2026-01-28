@@ -20,7 +20,6 @@ def avg_hr_per_ward(df):
 
 def sudden_spikes(df):
 
-
     df['heart_rate_diff'] = df.groupby('patient_id')['heart_rate'].diff()
 
     filter_mask = df['heart_rate_diff']>20

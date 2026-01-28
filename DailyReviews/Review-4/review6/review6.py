@@ -5,17 +5,20 @@ from faker import Faker
 
 fk = Faker()
 
-name_list = []
+import random
 
-for _ in range(50):
-    name_list.append(fk.first_name())
+df = pd.DataFrame({
 
-print(name_list)
-
-# import random
-#
-# df = pd.DataFrame({
-#
-#      'Gender' : [random.choice(['Male','Female']). i for i in range(100)]
-# })
-
+     'Gender' : [random.choice(['Male','Female'])for _ in range(100)]
+})
+print(df)
+value_counts = df['Gender'].value_counts()
+# print(df['value_counts'])
+#plot pie chart
+value_counts.plot.pie(
+    autopct='%1.1f%%',
+    startangle = 90,
+    title='Gender Distribution'
+)
+plt.ylabel(' ')
+plt.show()
